@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network and Connections</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class = "skip"><a href = "#maincontent">Skip to Main Content</a></div>
+        <div class = "logo"><img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo"></div>
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "resume.html">Resumes</a></li>
+                <li><a href = "network.html" class="active">Network and Connections</a></li>
+                <li><a href = "search.html">Career Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id = "maincontent">
+        <h1>Network and Connections</h1>
+        <section class ="networking-container">
+            <h2>Utilize Your Network</h2>
+            <div class = "networking-image">
+                <img src="images/UMSI_CareerFair_02062025_18.jpg" alt="Three men engaging in a conversation.">
+            </div>
+            <p>Networking is the process of building professional relationships to exchange information and support. It is a very useful tool when finding jobs, learning about industries, and gaining personal relationships to existing professionals.</p>
+        </section>
+        <section>
+            <h2>Intro to Connections</h2>
+            <div class = "connections">
+                Find an alumni who you can connect with to learn about their industries and gather detailed insight about their role. Here are the list of links you can use to find an alumni:
+                <ul>
+                    <li><a href="https://www.linkedin.com/groups/2649/">UMSI LinkedIn Group</a></li>
+                    <li><a href="https://www.linkedin.com/school/university-of-michigan---school-of-information/people/">UMSI
+                        Alumni Tool</a></li>
+                    <li><a href="https://si-umich.12twenty.com/Login">CareerLink</a> (employer contacts)</li>
+                    <li><a href="https://umich.peoplegrove.com/hub/ucan/home">UCAN</a></li>
+                    <li><a href="https://si-umich.12twenty.com/Login">Alumni Career Connections</a> (see CareerLink for event
+                    details)</li>
+                    <li><a href="https://si-umich.12twenty.com/Login">Networking or recruiting events</a> (see CareerLink for
+                    event details)</li>
+            </div>
+            </ul>
+        </section>
+
+        <section>
+            <h2>TIARA Method for Informational Interview/Coffee Chat</h2>
+                <p>
+                    A step-by-step approach to building likability with others and also a guide to confidently handling the Q&A portion of any informational interview.
+                </p>
+                <ul class = "tiara">
+                    <li><strong>Trends:</strong> Tailor trend-related questions to the specific company, industry, or role of the person you’re interviewing.</li>
+                    <li><strong>Insights:</strong> Use insight questions to narrow the focus to the individual. Ask about their daily routine, career history, and specific professional experiences.</li>
+                    <li><strong>Advice:</strong> Asking for advice brings the conversation back to you.</li>
+                    <li><strong>Resources:</strong> Request recommendations for tools, blogs, and digital resources. This initiates the closing phase of the interview while establishing specific touchpoints for future follow-up.</li>
+                    <li><strong>Assignments:</strong> Asking about assignment questions can give you another reason to follow up the interviewee.</li>
+
+                </ul>
+        </section>
+
+        <section>
+            <h2>Popular Networking Resources</h2>
+            Here are some list of networking resources that students found it most helpful for them.
+             <ul class = "popular-networking">
+                <li><a href="https://resumeworded.com/networking-email-templates/">ResumeWorded: Networking Email Templates for 2023</a></li>
+                <li><a href="https://docs.google.com/document/d/1cwq2KtdKQbO-tICHKUyKRA3QY4_3VJ8NLC2kwPBY4dI/edit?usp=sharing">[CDO] Networking Outreach Email Examples
+                    Alumni Tool</a></li>
+                <li><a href="https://lettersmith.ai.umich.edu">Lettersmith Templates</a></li>
+                <li><a href="https://docs.google.com/document/d/1cwq2KtdKQbO-tICHKUyKRA3QY4_3VJ8NLC2kwPBY4dI/edit?tab=t.0">Networking Outreach Email Examples</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
+        <p>© Copyrights <span id="year"></span> by University of Michigan. All rights reserved.</p>
+    </footer>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script>
+        // Scroll animation functionality
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Add fade-in class to sections
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('main section, main div[class*="container"]');
+            sections.forEach(section => {
+                section.classList.add('fade-in-section');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!-- I utilized copilot and google to add fade transition effects -->

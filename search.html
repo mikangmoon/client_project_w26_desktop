@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Search</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class = "skip"><a href = "#maincontent">Skip to Main Content</a></div>
+        <div class = "logo"><img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo"></div>
+        <nav>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "resume.html">Resumes</a></li>
+                <li><a href = "network.html">Network and Connections</a></li>
+                <li><a href = "search.html" class="active">Career Search</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id ="maincontent">
+        <h1>Career Search</h1>
+        <section class = "career-search-container">
+            <h2>Find the Best Plan for Your Job Search</h2>
+            <div class = "umsicareerfair-image">
+                <img src="images/umsi_careerfair.1.26.2314.jpg" alt="Crowd at a career fair.">
+            </div>
+            <p>Searching for jobs or internships is always stressful. We've organized essential information and resources when searching for your perfect career.</p>
+        </section>
+        <section>
+            <h2>Recruiting Timeline</h2>
+            <div class = "recruiting-timeline">
+                <ul>
+            <li><strong>Consulting & Financial Services:</strong>
+                <ul>
+                    <li>Recruiting peaks in September - October</li>
+                </ul>
+            </li>
+            <li><strong>Technology:</strong>
+            <ul>
+                <li>
+                Recruiting peaks in data science, software development, and some UX in September -
+                    October, and continues throughout the winter semester, with more UX recruiting peaking in January - April.
+                </li>
+            </ul>
+            </li>
+            <li><strong>Consumer Goods & Services:</strong>
+                    <ul>
+                        <li>Recruiting peaks in data science, software development and some UX in September -
+                        October and continues throughout the winter semester, with more UX recruiting peaking in January - April.</li>
+                    </ul>
+                </li>
+            <li><strong>Health & Medicine:</strong>
+            <ul>
+                <li>
+                Recruiting peaks in January - May.
+                </li>
+                <li>
+                Health Administration Fellowship applications open in October.
+                </li>
+            </ul>
+            </li>
+            <li><strong>Libraries & Archives:</strong>
+            <ul>
+                <li>Recruiting peaks in January - May</li>
+            </ul>
+            </li>
+            <li><strong>Nonprofits, startups, design agencies, & government:</strong>
+            <ul>
+                <li>Recruiting peaks in January - May.</li>
+                <li>Some government recruiting peaks in September - Oct for agencies requiring security
+                clearance such as the CIA and FBI. Security clearance can take up to 3-6 months. </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+        </section>
+        <section>
+            <h2>Job Planning Sheets for Job Seekers</h2>
+            <ul class="job-planning">
+                <li><a
+                    href="https://docs.google.com/spreadsheets/d/1fT4YeP1M5moXtFYniTkyb-CCLV7PZ75B9iJFH-XWMv4/edit?usp=sharing">Job
+                    Search Plan & Application Tracker</a></li>
+                <li><a
+                    href="https://docs.google.com/document/d/1fblfjC2Tki2MZOminwoIonvJYJ5tiBTKP8isaCzaIfY/edit?usp=sharing">Job
+                    & Internship Search Checklist</a></li>
+                <li><a
+                    href="https://docs.google.com/document/d/1_Mh2N-azjpH-WAf0Z6T51D6ag5ciYw4HpNwc0T6j_rM/edit?tab=t.0">Job and Internship Strategic Plan</a></li>
+                <li><a
+                    href="https://docs.google.com/presentation/d/1KONLe6fqBEpUobHhj1TIaTFwE6kUWKHTe3qO3cZmM1Y/edit?slide=id.p1#slide=id.p1">The 2 Hour Job Search</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Preparing Application Materials</h2>
+            Draft your application materials ahead of time so that you're always ready to apply. Here are resources to help you get started:
+            <ul class = "application-materials">
+                <li><a
+                    href="https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?usp=sharing">Resume Guide and Rubric</a></li>
+                <li><a
+                    href="https://docs.google.com/document/d/15kYeycV4isGpNFI6DWnjqTkp5JnMyitKJ1Wc8kIH-eA/edit?tab=t.0">Coverletter Guide and Rubric</a></li>
+                <li><a
+                    href="https://docs.google.com/document/d/15b0q8LJQdyR-fPMlEWRqNSSz-Ib9G3Vf1ZyHXQoy6no/edit?tab=t.0">Linkedin Profile Rubric</a></li>
+                <li><a
+                    href="https://docs.google.com/document/d/1L8Sc0ezVVCvP9SdUDwr0hwrNAd3us0JBbmUpoCYN-rs/edit?tab=t.0">Portfolio Guide</a></li>
+            </ul>
+        </section>
+    </main>
+        <footer>
+            <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
+            <p>© Copyrights <span id="year"></span> by University of Michigan. All rights reserved.</p>
+        </footer>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script>
+        // Scroll animation functionality
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        // Add fade-in class to sections
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('main section, main div[class*="container"]');
+            sections.forEach(section => {
+                section.classList.add('fade-in-section');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!-- I utilized copilot and google to add fade transition effects -->
